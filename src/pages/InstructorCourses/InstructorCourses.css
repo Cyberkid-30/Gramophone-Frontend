@@ -7,6 +7,7 @@
 .instructor_courses_main {
   width: 100%;
   background-color: var(--light-color);
+  padding-bottom: 1rem;
 }
 
 .courses_section {

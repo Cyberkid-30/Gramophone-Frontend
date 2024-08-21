@@ -6,7 +6,7 @@
 
 body,
 .landing_page_container {
-  overflow-x:initial;
+  overflow-x: initial;
 }
 
 .student_courses_main {
@@ -33,17 +33,20 @@ body,
   font-size: 1.3rem;
 }
 /* Existing styles */
-
+.course-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
 .course-1 img {
   flex: 1;
-  border-radius:50px ;
+  border-radius: 50px;
   border: 30rem;
   box-shadow: inset;
   max-width: 100%;
   height: auto;
   /* width: auto; */
-  max-height: 300px; 
-  object-fit: cover; 
+  max-height: 300px;
+  object-fit: cover;
   flex-shrink: inherit;
 }
 
