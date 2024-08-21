@@ -4,7 +4,7 @@ import "./LandingPage.css";
 import Navbar from "../../components/Navbar/Navbar";
 // import ReviewCard from "../../components/ReviewCard/ReviewCard";
 import Modal from "./Modal";
-import backgroundImage from "/assets/Images/background-2.jpg";
+import backgroundImage from "/background-2.jpg";
 
 function LandingPage() {
   const [showModal, setShowModal] = useState(false);
