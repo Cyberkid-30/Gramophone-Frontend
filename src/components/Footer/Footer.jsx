@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -7,18 +8,21 @@ const Footer = () => {
         <h3>Gramophone Academy of Music</h3>
         <div className="social-links">
           <a href="">
-            <img src="src\assets\icons\facebook-2.png" alt="" />
+            <img src="public\assets\icons\facebook-2.png" alt="" />
           </a>
           <a href="">
-            <img src="src\assets\icons\linkedin.png" alt="" />
+            <img src="public\assets\icons\linkedin.png" alt="" />
           </a>
           <a href="">
-            <img src="src\assets\icons\youtube.png" alt="" />
+            <img src="public\assets\icons\youtube.png" alt="" />
           </a>
           <a href="">
-            <img src="src\assets\icons\instagram.png" alt="" />
+            <img src="public\assets\icons\instagram.png" alt="" />
           </a>
         </div>
+        <Link to="/adminDashboard">Admin</Link>
+        <Link to="/instructorDashboard">Instructor</Link>
+        <Link to="/studentDashboard">Student</Link>
       </section>
       {/* <section className="topic">
         <h4>Topic</h4>
