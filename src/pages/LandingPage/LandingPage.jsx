@@ -4,6 +4,7 @@ import "./LandingPage.css";
 import Navbar from "../../components/Navbar/Navbar";
 // import ReviewCard from "../../components/ReviewCard/ReviewCard";
 import Modal from "./Modal";
+import backgroundImage from "/assets/Images/background-2.jpg";
 
 function LandingPage() {
   const [showModal, setShowModal] = useState(false);
@@ -65,7 +66,10 @@ function LandingPage() {
     <div>
       <Navbar />
 
-      <div className="section-1">
+      <div
+        className="section-1"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      >
         <h1 className="welcome-text">
           WELCOME TO OUR <br />
           STUDENT SERVICES
