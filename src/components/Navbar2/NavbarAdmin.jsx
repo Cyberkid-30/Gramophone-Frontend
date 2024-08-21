@@ -7,7 +7,7 @@ const NavbarAdmin = () => {
 
   return (
     <nav className="nav-bar2 admin_nav">
-      <img className="logo" src="public\assets\Grammophone2 2.png" alt="" />
+      <img className="logo" src="assets\Grammophone2 2.png" alt="" />
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>

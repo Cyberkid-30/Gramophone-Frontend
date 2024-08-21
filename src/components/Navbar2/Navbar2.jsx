@@ -50,7 +50,7 @@ const Navbar2 = () => {
 
   return (
     <nav className="nav-bar2">
-      <img className="logo" src="public/assets/Grammophone2 2.png" alt="Logo" />
+      <img className="logo" src="assets/Grammophone2 2.png" alt="Logo" />
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>

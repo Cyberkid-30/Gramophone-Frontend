@@ -8,16 +8,16 @@ const Footer = () => {
         <h3>Gramophone Academy of Music</h3>
         <div className="social-links">
           <a href="">
-            <img src="public\assets\icons\facebook-2.png" alt="" />
+            <img src="assets\icons\facebook-2.png" alt="" />
           </a>
           <a href="">
-            <img src="public\assets\icons\linkedin.png" alt="" />
+            <img src="assets\icons\linkedin.png" alt="" />
           </a>
           <a href="">
-            <img src="public\assets\icons\youtube.png" alt="" />
+            <img src="assets\icons\youtube.png" alt="" />
           </a>
           <a href="">
-            <img src="public\assets\icons\instagram.png" alt="" />
+            <img src="assets\icons\instagram.png" alt="" />
           </a>
         </div>
         <Link to="/adminDashboard">Admin</Link>

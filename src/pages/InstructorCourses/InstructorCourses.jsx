@@ -11,7 +11,7 @@ const course = {
   instructorPhone: "02434567890",
   dayOfSession: "Monday",
   timeOfSession: "4:00pm",
-  imageURL: "public/assets/Images/drums.png",
+  imageURL: "assets/Images/drums.png",
 };
 
 const InstructorCourses = () => {
