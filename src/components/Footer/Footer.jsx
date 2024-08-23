@@ -20,9 +20,9 @@ const Footer = () => {
             <img src="assets\icons\instagram.png" alt="" />
           </a>
         </div>
-        <Link to="/adminDashboard">Admin</Link>
+        {/* <Link to="/adminDashboard">Admin</Link>
         <Link to="/instructorDashboard">Instructor</Link>
-        <Link to="/studentDashboard">Student</Link>
+        <Link to="/studentDashboard">Student</Link> */}
       </section>
       {/* <section className="topic">
         <h4>Topic</h4>
