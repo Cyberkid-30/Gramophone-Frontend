@@ -23,7 +23,7 @@ const Modal = ({ show, handleClose }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:4000/login", {  // Update with your actual backend URL
+      const response = await fetch("https://ampsgramophone-backend.vercel.app/login", {  // Update with your actual backend URL
         method: "POST",
         headers: {
           "Content-Type": "application/json",
