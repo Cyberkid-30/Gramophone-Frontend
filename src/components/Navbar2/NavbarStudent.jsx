@@ -19,7 +19,7 @@ const NavbarStudent = () => {
         try {
           const token = localStorage.getItem("token"); // Assuming you store the JWT in localStorage
 
-          const response = await fetch("http://localhost:4000/logout", {
+          const response = await fetch("https://ampsgramophone-backend.vercel.app/logout", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
