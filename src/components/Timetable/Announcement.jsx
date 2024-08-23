@@ -13,7 +13,7 @@ const Announcement = () => {
           return;
         }
 
-        const response = await fetch("http://localhost:4000/students/allannouncements", {
+        const response = await fetch("https://ampsgramophone-backend.vercel.app/students/allannouncements", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
