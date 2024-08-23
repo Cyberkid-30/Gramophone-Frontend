@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -23,7 +22,7 @@ const Modal = ({ show, handleClose }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://ampsgramophone-backend.vercel.app/login", {  // Update with your actual backend URL
+      const response = await fetch("https://ampsgramophone-backend.vercel.app/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -33,11 +32,11 @@ const Modal = ({ show, handleClose }) => {
 
       const data = await response.json();
 
+      console.log('Response data:', data); // Log the response data for debugging
+
       if (response.ok) {
-        // Store the token in local storage
         localStorage.setItem('token', data.token);
 
-        // Display success message with user's role and name
         Swal.fire({
           icon: "success",
           title: "Login Successful",
@@ -46,7 +45,6 @@ const Modal = ({ show, handleClose }) => {
 
         setError("");
 
-        // Navigate based on user role
         if (data.type === "admin") {
           navigate("/dashboard");
         } else if (data.type === "student") {
