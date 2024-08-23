@@ -3,7 +3,7 @@ export const Courses = async () => {
   try {
     const token = localStorage.getItem("token"); // Assuming the JWT is stored in localStorage
 
-    const response = await fetch("http://localhost:4000/students/courses", { // Replace with your actual API endpoint
+    const response = await fetch("https://ampsgramophone-backend.vercel.app/students/courses", { // Replace with your actual API endpoint
       method: "GET",
       headers: {
         "Content-Type": "application/json",

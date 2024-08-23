@@ -11,7 +11,7 @@ function StudentCourses() {
     const fetchCourses = async () => {
       try {
         const token = localStorage.getItem("token"); // Get the JWT token from localStorage
-        const response = await fetch("http://localhost:4000/students/courses", {
+        const response = await fetch("https://ampsgramophone-backend.vercel.app/students/courses", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

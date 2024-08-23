@@ -18,7 +18,7 @@ const StudentDashboard = () => {
 
         // Fetch student name
         const studentResponse = await fetch(
-          "http://localhost:4000/students/student-info",
+          "https://ampsgramophone-backend.vercel.app/students/student-info",
           {
             method: "GET",
             headers: {
@@ -38,7 +38,7 @@ const StudentDashboard = () => {
 
         // Fetch courses for the student
         const coursesResponse = await fetch(
-          "http://localhost:4000/students/courses",
+          "https://ampsgramophone-backend.vercel.app/students/courses",
           {
             method: "GET",
             headers: {
