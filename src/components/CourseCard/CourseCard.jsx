@@ -6,7 +6,7 @@ import "../../pages/StudentCourses/StudentCourses.css";
 // Function to get image URL based on courseCode
 const getImageURL = (courseCode) => {
   if (courseCode.startsWith("Drum")) {
-    return "/assets/Images/pexels-juresiric-730656.jpg"; // Path to drum image
+    return "/assets/Images/Drum PIC.jpg"; // Path to drum image
   }
   // Add more conditions for other course types if needed
   // For example:
