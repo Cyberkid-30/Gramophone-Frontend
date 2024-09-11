@@ -7,6 +7,7 @@ const Modal = ({ show, handleClose }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [isLoading, setLoading]= useState(false);
 
   const navigate = useNavigate();
 
@@ -59,6 +60,9 @@ const Modal = ({ show, handleClose }) => {
       console.error("Login error:", err);
       setError("An error occurred during login. Please try again.");
     }
+    finally{
+      setLoading(false);
+    }
   };
 
   return (
@@ -90,8 +94,9 @@ const Modal = ({ show, handleClose }) => {
               required
             />
           </div>
-          <button type="submit" className="logIn-btn">
+          <button type="submit" className="logIn-btn" disabled={isLoading}>
             Login
+            {isLoading && <div className="spinner" style={{marginLeft:"10px"}}></div>}
           </button>
         </form>
       </div>

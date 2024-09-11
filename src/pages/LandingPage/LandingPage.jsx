@@ -8,7 +8,7 @@ import backgroundImage from "/background-2.jpg";
 
 function LandingPage() {
   const [showModal, setShowModal] = useState(false);
-  const [isLoading, setLoading]= useState(false);
+  
 
   const handleOpenModal = () => {
     setShowModal(true);
@@ -78,7 +78,7 @@ function LandingPage() {
         <p style={{ color: "#fff" }}>WE ARE GLAD TO HAVE YOU HERE WITH US.</p>
         <button className="login-btn" onClick={handleOpenModal}>
           LOGIN
-          {isLoading && <div className="spinner" style={{marginLeft:"10px"}}></div>}
+          
         </button>
         <Modal show={showModal} handleClose={handleCloseModal} />
       </div>
