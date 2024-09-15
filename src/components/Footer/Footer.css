@@ -5,10 +5,9 @@
 }
 
 .footer-container {
-  display: flex;
   background-color: var(--dark-color);
   color: white;
-  padding: 2.5rem;
+  padding: 1.5rem 2rem 0.5rem;
   bottom: 0;
   width: 100%;
   gap: 1rem;
@@ -16,6 +15,7 @@
 .gramophone {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   flex: 3;
   justify-content: space-between;
   /* background-color: aqua; */
@@ -32,9 +32,15 @@
 .social-links img {
   width: 1.5rem;
 }
-.topic {
+
+.copyright {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* .topic {
   flex: 1;
-  /* background-color: antiquewhite; */
+   background-color: antiquewhite; 
 }
 .topic h4 {
   margin-bottom: 1rem;
@@ -43,7 +49,7 @@
   list-style: none;
   margin-bottom: 1rem;
   color: var(--gray-color);
-}
+} */
 
 @media (max-width: 400px) {
   .topic {

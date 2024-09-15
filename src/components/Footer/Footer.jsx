@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -20,34 +19,8 @@ const Footer = () => {
             <img src="assets\icons\instagram.png" alt="" />
           </a>
         </div>
-        {/* <Link to="/adminDashboard">Admin</Link>
-        <Link to="/instructorDashboard">Instructor</Link>
-        <Link to="/studentDashboard">Student</Link> */}
       </section>
-      {/* <section className="topic">
-        <h4>Topic</h4>
-        <ul>
-          <li>Page</li>
-          <li>Page</li>
-          <li>Page</li>
-        </ul>
-      </section>
-      <section className="topic">
-        <h4>Topic</h4>
-        <ul>
-          <li>Page</li>
-          <li>Page</li>
-          <li>Page</li>
-        </ul>
-      </section>
-      <section className="topic">
-        <h4>Topic</h4>
-        <ul>
-          <li>Page</li>
-          <li>Page</li>
-          <li>Page</li>
-        </ul>
-      </section> */}
+      <div className="copyright">&copy; 2024 Designed by Quetzal Tech.</div>
     </footer>
   );
 };
