@@ -8,7 +8,6 @@ import backgroundImage from "/background-2.jpg";
 
 function LandingPage() {
   const [showModal, setShowModal] = useState(false);
-  
 
   const handleOpenModal = () => {
     setShowModal(true);
@@ -72,13 +71,12 @@ function LandingPage() {
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <h1 className="welcome-text">
-          WELCOME TO OU <br />
+          WELCOME TO OUR <br />
           STUDENT SERVICES
         </h1>
         <p style={{ color: "#fff" }}>WE ARE GLAD TO HAVE YOU HERE WITH US.</p>
         <button className="login-btn" onClick={handleOpenModal}>
           LOGIN
-          
         </button>
         <Modal show={showModal} handleClose={handleCloseModal} />
       </div>
