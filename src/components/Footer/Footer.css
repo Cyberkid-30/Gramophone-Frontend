@@ -30,10 +30,11 @@
   gap: 10px;
 }
 .social-links img {
-  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .copyright {
+  margin-top: 1rem;
   text-align: center;
   font-size: 1.1rem;
 }

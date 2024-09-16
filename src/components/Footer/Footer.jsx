@@ -6,16 +6,16 @@ const Footer = () => {
       <section className="gramophone">
         <h3>Gramophone Academy of Music</h3>
         <div className="social-links">
-          <a href="">
+          <a href="#">
             <img src="assets\icons\facebook-2.png" alt="" />
           </a>
-          <a href="">
+          <a href="#">
             <img src="assets\icons\linkedin.png" alt="" />
           </a>
-          <a href="">
+          <a href="#">
             <img src="assets\icons\youtube.png" alt="" />
           </a>
-          <a href="">
+          <a href="#">
             <img src="assets\icons\instagram.png" alt="" />
           </a>
         </div>
