@@ -8,7 +8,7 @@ const Modal = ({ show, handleClose }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [isLoading, setLoading]= useState(false);
+  const [isLoading, setLoading] = useState(false);
 
   const navigate = useNavigate();
 
@@ -24,20 +24,23 @@ const Modal = ({ show, handleClose }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://ampsgramophone-backend.vercel.app/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username, password }),
-      });
+      const response = await fetch(
+        "https://ampsgramophone-backend.vercel.app/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ username, password }),
+        }
+      );
 
       const data = await response.json();
 
-      console.log('Response data:', data); // Log the response data for debugging
+      console.log("Response data:", data); // Log the response data for debugging
 
       if (response.ok) {
-        localStorage.setItem('token', data.token);
+        localStorage.setItem("token", data.token);
 
         Swal.fire({
           icon: "success",
@@ -60,10 +63,12 @@ const Modal = ({ show, handleClose }) => {
     } catch (err) {
       console.error("Login error:", err);
       setError("An error occurred during login. Please try again.");
-    }
-    finally{
+    } finally {
       setLoading(false);
     }
+
+    setUsername("");
+    setPassword("");
   };
 
   return (
@@ -97,7 +102,9 @@ const Modal = ({ show, handleClose }) => {
           </div>
           <button type="submit" className="logIn-btn" disabled={isLoading}>
             Login
-            {isLoading && <div className="spinner" style={{marginLeft:"10px"}}></div>}
+            {isLoading && (
+              <div className="spinner" style={{ marginLeft: "10px" }}></div>
+            )}
           </button>
         </form>
       </div>
