@@ -39,21 +39,8 @@
   font-size: 1.1rem;
 }
 
-/* .topic {
-  flex: 1;
-   background-color: antiquewhite; 
-}
-.topic h4 {
-  margin-bottom: 1rem;
-}
-.topic ul li {
-  list-style: none;
-  margin-bottom: 1rem;
-  color: var(--gray-color);
-} */
-
-@media (max-width: 400px) {
-  .topic {
-    display: none;
+@media screen and (max-width: 37.5em) {
+  .copyright {
+    margin-top: 2rem;
   }
 }
